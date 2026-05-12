@@ -19,8 +19,8 @@ async function startServer() {
   // API Route for Quote Submissions
   app.post("/api/quote", async (req, res) => {
     const data = req.body;
-    const gmailUser = "wpnajmul@gmail.com";
-    const gmailPass = "fllr ibqq smks lric";
+    const gmailUser = process.env.GMAIL_USER;
+    const gmailPass = process.env.GMAIL_APP_PASSWORD;
 
     console.log("New Lead Received:", data);
 
