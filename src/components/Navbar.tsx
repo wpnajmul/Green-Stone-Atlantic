@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
         )}
       >
         <Link to="/" className="flex items-center gap-3 group">
-           <img src="/logo.png" className='w-32 h-26 scale-150 overflow-hidden' alt="" />
+           <img src="/logo.png" className='xl:w-32 w-22 h-18 xl:h-26 scale-150 overflow-hidden' alt="" />
         </Link>
 
         {/* Desktop Nav */}
