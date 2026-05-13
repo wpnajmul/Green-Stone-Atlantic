@@ -15,13 +15,12 @@ async function startServer() {
   const PORT = 3000;
 
   app.use(express.json());
-
-  // API Route for Quote Submissions
+   // API Route for Quote Submissions
   app.post("/api/quote", async (req, res) => {
     const data = req.body;
     const gmailUser = process.env.GMAIL_USER;
     const gmailPass = process.env.GMAIL_APP_PASSWORD;
-
+   
     console.log("New Lead Received:", data);
 
     if (!gmailUser || !gmailPass) {
@@ -44,8 +43,11 @@ async function startServer() {
       });
 
       const mailOptions = {
-        from: `"Green Stone Atlantic Leads" <${gmailUser}>`,
-        to: ["GreenStoneNS1@gmail.com", "wpnajmul@gmail.com"],
+from: {
+  name: "Green Stone Atlantic",
+  address: gmailUser,
+},
+        to: ["shuvosarakar50@gmail.com", "wpnajmul@gmail.com"],
         subject: `New Lead: ${data.fullName} - ${data.serviceId}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px;">

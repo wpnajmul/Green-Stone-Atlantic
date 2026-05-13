@@ -80,10 +80,7 @@ export const Layout: React.FC = () => {
           rel="noopener noreferrer"
           className="w-14 h-14 bg-[#25D366] text-white rounded-full shadow-[0_20px_50px_rgba(37,211,102,0.4)] flex items-center justify-center transition-all group overflow-hidden"
         >
-          <MessageSquare size={24} />
-          <span className="absolute right-full mr-4 bg-white text-[#25D366] text-[10px] uppercase font-black tracking-widest px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-gray-100">
-            WhatsApp Us
-          </span>
+         <img src="/whatsapp (1).png" alt="" />
         </motion.a>
 
         {/* Floating Quote Request */}
