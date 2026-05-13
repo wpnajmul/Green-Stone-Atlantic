@@ -49,20 +49,7 @@ export const Navbar: React.FC = () => {
         )}
       >
         <Link to="/" className="flex items-center gap-3 group">
-          <motion.div 
-            whileHover={{ rotate: 180 }}
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-all duration-700 group-hover:bg-brand-accent shadow-xl"
-          >
-            <span className="text-brand-dark font-display font-black text-2xl group-hover:text-white transition-colors">G</span>
-          </motion.div>
-          <div className="flex flex-col">
-            <span className="text-white font-display font-black tracking-tighter leading-none text-xl uppercase">
-              Green Stone
-            </span>
-            <span className="text-brand-secondary font-display font-medium text-[9px] uppercase tracking-[0.4em] leading-none mt-1">
-              Atlantic
-            </span>
-          </div>
+           <img src="/logo.png" className='w-32 h-26 scale-150 overflow-hidden' alt="" />
         </Link>
 
         {/* Desktop Nav */}

@@ -14,13 +14,8 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="space-y-8">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-brand-accent rounded-xl flex items-center justify-center">
-                <span className="text-white font-display font-bold text-2xl">G</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-xl tracking-tight leading-none uppercase">Green Stone</span>
-                <span className="text-brand-secondary text-xs uppercase tracking-[0.2em] leading-none">Atlantic</span>
-              </div>
+                        <img src="/logo.png" className='w-32 h-26 scale-150 overflow-hidden' alt="" />
+
             </Link>
             <p className="text-white/60 leading-relaxed font-sans mt-6">
               The premier choice for luxury landscaping and professional hardscaping in the Halifax Regional Municipality.
