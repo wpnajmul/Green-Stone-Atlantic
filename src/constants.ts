@@ -3,7 +3,7 @@ import { Service, Testimonial, Project } from './types';
 export const BUSINESS_INFO = {
   name: 'Green Stone Atlantic',
   location: 'Halifax, Nova Scotia',
-  phone: '902-266-9731',
+  phone: '1902-266-9731',
   email: 'greenstonens1@gmail.com',
   address: 'Halifax, NS, Canada',
 };
