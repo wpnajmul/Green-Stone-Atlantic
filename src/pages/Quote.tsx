@@ -91,7 +91,7 @@ export const Quote: React.FC = () => {
                     <div className="w-12 h-12 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all">
                       <Phone size={20} />
                     </div>
-                    <span className="text-lg font-display font-bold text-brand-dark transition-colors group-hover:text-brand-accent">{BUSINESS_INFO.phone}</span>
+                    <span className="text-lg font-display font-bold text-brand-dark transition-colors group-hover:text-brand-accent">902-266-9731</span>
                   </a>
                   <a href={`mailto:${BUSINESS_INFO.email}`} className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all">

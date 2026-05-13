@@ -3,10 +3,11 @@ import { motion } from 'motion/react';
 
 export const Stats: React.FC = () => {
   const stats = [
-    { label: 'Years Experience', value: '12' },
-    { label: 'Halifax Clients', value: '500' },
-    { label: 'Stone Laid (sf)', value: '50k' },
-    { label: 'Vibe Rating', value: '11/10' },
+    { label: 'Star Rating', value: '5/5' },
+    { label: 'projects completed', value: '50+' },
+    { label: 'Consultation & Estimates', value: 'Free' },
+    
+    { label: 'Locally owned', value: 'Halifax' },
   ];
 
   return (

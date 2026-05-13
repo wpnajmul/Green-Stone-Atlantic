@@ -47,7 +47,7 @@ from: {
   name: "Green Stone Atlantic",
   address: gmailUser,
 },
-        to: ["greenstonens1@gmail.com", "wpnajmul@gmail.com"],
+        to: ["md.sirforce@gmail.com", "wpnajmul@gmail.com"],
         subject: `New Lead: ${data.fullName} - ${data.serviceId}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px;">

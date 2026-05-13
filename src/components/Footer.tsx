@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
                 <div>
                   <p className="text-xs uppercase tracking-widest text-white/40 font-bold mb-1">Call Us</p>
                   <a href={`tel:${BUSINESS_INFO.phone}`} className="text-white hover:text-brand-secondary transition-colors font-bold">
-                    {BUSINESS_INFO.phone}
+                    902-266-9731
                   </a>
                 </div>
               </li>

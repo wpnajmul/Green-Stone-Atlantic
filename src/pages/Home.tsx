@@ -238,7 +238,7 @@ export const Home: React.FC = () => {
               <div className="w-px h-12 bg-white/10" />
               <div className="flex flex-col items-center">
                 <span className="text-brand-accent font-display font-black text-3xl">Nova</span>
-                <span className="text-white/40 text-[10px] uppercase font-bold tracking-[0.2em]">Provincial</span>
+                <span className="text-white/40 text-[10px] uppercase font-bold tracking-[0.2em]">Scotia</span>
               </div>
             </div>
           </motion.div>

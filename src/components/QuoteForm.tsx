@@ -14,7 +14,7 @@ const quoteSchema = z.object({
   address: z.string().min(5, 'Property address is required'),
   serviceId: z.string().min(1, 'Please select a service'),
   preferredDate: z.string().min(1, 'Please select a date'),
-  budgetRange: z.string().min(1, 'Please select a budget'),
+  // budgetRange: z.string().min(1, 'Please select a budget'),
   description: z.string().min(10, 'Please provide more project details'),
 });
 
@@ -32,15 +32,15 @@ export const QuoteForm: React.FC<{ compact?: boolean }> = ({ compact }) => {
     formState: { errors, isSubmitting },
   } = useForm<QuoteFormData>({
     resolver: zodResolver(quoteSchema),
-    defaultValues: {
-      budgetRange: '$1k - $5k',
-    }
+    // defaultValues: {
+    //   budgetRange: '$1k - $5k',
+    // }
   });
 
   const nextStep = async () => {
     let fieldsToValidate: (keyof QuoteFormData)[] = [];
     if (step === 1) fieldsToValidate = ['serviceId'];
-    if (step === 2) fieldsToValidate = ['address', 'preferredDate', 'budgetRange', 'description'];
+    if (step === 2) fieldsToValidate = ['address', 'preferredDate',  'description'];
     
     const isValid = await trigger(fieldsToValidate);
     if (isValid) setStep(step + 1);
@@ -204,7 +204,7 @@ export const QuoteForm: React.FC<{ compact?: boolean }> = ({ compact }) => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              {/* <div className="space-y-4">
                 <div className="flex items-center gap-2 mb-2">
                   <DollarSign size={14} className="text-brand-accent" />
                   <label className="text-[10px] font-black text-brand-dark uppercase tracking-widest">Expected Budget</label>
@@ -219,7 +219,7 @@ export const QuoteForm: React.FC<{ compact?: boolean }> = ({ compact }) => {
                     </label>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               <div className="space-y-2">
                 <div className="flex items-center gap-2 mb-2">
