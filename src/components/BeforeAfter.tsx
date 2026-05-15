@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { MoveHorizontal } from 'lucide-react';
+import { MoveHorizontal, Video } from 'lucide-react';
 import { Project } from '../types';
 
 interface BeforeAfterCardProps {
@@ -25,11 +25,12 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ project }) => {
         onTouchMove={handleMove}
       >
         {/* After Image */}
-        <img 
+        <video 
           src={project.afterImage} 
-          alt="After Landscaping"
+          autoPlay muted loop  playsInline
+          
           className="absolute inset-0 w-full h-full object-cover"
-          referrerPolicy="no-referrer"
+          
         />
         
         {/* Before Image (Clipped) */}
@@ -37,11 +38,12 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ project }) => {
           className="absolute inset-0 w-full h-full overflow-hidden"
           style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
         >
-          <img 
+          <video
             src={project.beforeImage} 
-            alt="Before Landscaping"
+            autoPlay loop muted  playsInline
+            
             className="absolute inset-0 w-full h-full object-cover"
-            referrerPolicy="no-referrer"
+           
           />
           <div className="absolute top-6 left-6 bg-brand-dark/60 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-md">
             Before
